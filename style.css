@@ -17,20 +17,30 @@ nav {
 }
 
 .ads {
-    display: flex;
+    display: none;
     flex-direction: row;
 }
 
-.ads img {
-    max-width: 100px;
-    height: auto;
-}
+
 
 a {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
     font-size: 20px;
+}
+
+.ads {
+    clear:both;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.ads img {
+    width: 60px;
+    height: auto;
+    margin: 0 5px;
+    display: inline-block;
 }
 
 
@@ -111,15 +121,16 @@ footer a:hover {
     .mainarticle img {
         display: block;
     }
-
-    .ads {
-        clear: both;
+    
+    .ads img {
+        width: 100px;
     }
 
-    .ads img {
-        display: block;
-        width: 400px;
-        margin-right: 20px;
+    .ads {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -136,6 +147,10 @@ footer a:hover {
         width: 300px;
     }
 
+    .ads img {
+        width: 200px;
+    }   
+
     .article img {
         display: block;
         width: 25%;
@@ -145,10 +160,16 @@ footer a:hover {
 }
 
 @media (min-width: 992px) {
-
+    .logo img {
+        width: 400px;
+    }
 
     .article img {
         width: 150px;
+    }
+
+    .ads img {
+        width: 250px;
     }
 
     .minview {
