@@ -1,6 +1,6 @@
 body {
-position: relative;
-color: #000000
+    position: relative;
+    color: #000000
 }
 
 nav {
@@ -63,6 +63,7 @@ a {
     justify-content: center;
     align-items: center;
 }
+
 .logo img {
     width: 150px;
     height: auto;
@@ -70,7 +71,7 @@ a {
 
 .article {
     clear: both;
-    position: float;
+    position: relative;
     margin-bottom: 20px;
 }
 
@@ -119,28 +120,22 @@ footer a:hover {
     .mainarticle img {
         display: block;
     }
-    
+
     .adsleft {
         position: absolute;
         left: 10px;
         top: 150px;
         width: 150px;
     }
-    
+
     .adsleft img {
         width: 140px;
         display: block;
         margin-bottom: 10px;
     }
-    
+
     body {
         margin-left: 170px;
-    }
-    
-    body {
-        gap: 20px;
-        margin: 0;
-        padding: 0;
     }
 }
 
@@ -172,24 +167,20 @@ footer a:hover {
         top: 150px;
         width: 150px;
     }
-    
+
     .adsright img {
         width: 140px;
         display: block;
         margin-bottom: 10px;
     }
-    
+
     body {
+        margin-left: 170px;
         margin-right: 170px;
-        max-width: 150px;
     }
 
     .article img {
         width: 150px;
-    }
-    
-    body {
-        margin-right: 170px;
     }
 
     .minview {
