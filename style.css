@@ -23,14 +23,39 @@ a {
     font-size: 20px;
 }
 
+.adsleft {
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5px;
+}
+
+.adsright {
+    position: relative;
+    right: 0;
+    display: none;
+}
+
+.adsleft img {
+    flex: 1;
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
 .mainarticle {
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .mainarticle img {
     float: left;
     margin-right: 20px;
+    width: 100px;
+    display: none;
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -38,31 +63,131 @@ a {
     justify-content: center;
     align-items: center;
 }
-
-.add {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .logo img {
-    width: 400px;
+    width: 150px;
     height: auto;
 }
+
+
 
 .article {
     clear: both;
     position: float;
+    margin-bottom: 20px;
 }
 
-@media (max-width: 500px) {
-    .logo img {
-        width: 200px;
+.article img {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.fullview {
+    display: none;
+}
+
+.minview {
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+    clear: both;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+@media (min-width: 576px) {
+    .mainarticle img {
+        display: block;
     }
+    
+    .adsleft {
+        position: fixed;
+        left: 10px;
+        top: 200px;
+        width: 150px;
+        flex-direction: column;
+    }
+    
+    .adsleft img {
+        width: 100%;
+        max-width: 150px;
+    }
+    
+    body {
+        margin-left: 170px;
+    }
+}
+
+@media (min-width: 720px) {
 
     .mainarticle img {
+        min-width: 100px;
         width: 50%;
-        height: auto;
+        max-width: 400px;
+    }
+
+    .logo img {
+        width: 300px;
+    }
+
+    .article img {
+        display: block;
+        width: 25%;
+        float: left;
+        margin-right: 20px;
     }
 }
 
+@media (min-width: 992px) {
+    .adsright {
+        display: flex;
+        position: fixed;
+        right: 10px;
+        top: 200px;
+        width: 150px;
+        flex-direction: column;
+    }
+    
+    .adsright img {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .article img {
+        width: 150px;
+    }
+    
+    body {
+        margin-right: 170px;
+    }
+
+    .minview {
+        display: none;
+    }
+
+    .fullview {
+        display: block;
+    }
+}
