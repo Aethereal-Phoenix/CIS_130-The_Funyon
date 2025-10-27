@@ -124,6 +124,7 @@ footer a:hover {
     
     .adsleft {
         position: fixed;
+        display: block;
         left: 10px;
         top: 200px;
         width: 150px;
@@ -162,7 +163,7 @@ footer a:hover {
 
 @media (min-width: 992px) {
     .adsright {
-        display: flex;
+        display: block;
         position: fixed;
         right: 10px;
         top: 200px;
