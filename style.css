@@ -16,6 +16,16 @@ nav {
     background-color: #ffffff;
 }
 
+.ads {
+    display: flex;
+    flex-direction: row;
+}
+
+.ads img {
+    max-width: 100px;
+    height: auto;
+}
+
 a {
     text-decoration: none;
     color: #000000;
@@ -23,27 +33,7 @@ a {
     font-size: 20px;
 }
 
-.adsleft {
-    width: 100%;
-    text-align: center;
-    margin: 20px 0;
-    background-color: #f0f0f0;
-    padding: 10px;
-}
 
-.adsright {
-    width: 100%;
-    text-align: center;
-    margin: 20px 0;
-    background-color: #f0f0f0;
-    padding: 10px;
-}
-
-.adsleft img, .adsright img {
-    width: 80px;
-    height: auto;
-    margin: 0 5px;
-}
 
 .mainarticle {
     justify-content: center;
@@ -122,23 +112,17 @@ footer a:hover {
         display: block;
     }
 
-    .adsleft {
-        position: absolute;
-        left: 10px;
-        top: 150px;
-        width: 150px;
+    .ads {
+        clear: both;
     }
 
-    .adsleft img {
-        width: 80px;
+    .ads img {
         display: block;
-        margin-bottom: 10px;
-    }
-
-    body {
-        margin-left: 170px;
-    }
+        width: 400px;
+        margin-right: 20px;
 }
+
+
 
 @media (min-width: 720px) {
 
@@ -161,24 +145,7 @@ footer a:hover {
 }
 
 @media (min-width: 992px) {
-    .adsright {
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 150px;
-        width: 10%;
-    }
 
-    .adsright img {
-        width: 80px;
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    body {
-        margin-left: 170px;
-        margin-right: 170px;
-    }
 
     .article img {
         width: 150px;
